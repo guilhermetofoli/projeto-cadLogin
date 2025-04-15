@@ -7,5 +7,7 @@ function acessar(){
     if(!loginEmail || !loginSenha){
         alert('Favor preencher todos os campos!');
         return;
+    }else {
+        window.location.href = 'cadastro.html';
     }
 }
