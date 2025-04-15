@@ -18,4 +18,11 @@ var dadosLista = [];
 function salvarUser(){
     let nomeUser = document.getElementById('nomeUser').value;
 
+    if(nomeUser){
+        dadosLista.push(nomeUser);
+        console.log(dadosLista);
+        document.getElementById('nomeUser').value = '';
+        alert('Usuário cadastrado com sucesso!');
+    }
+
 }
