@@ -39,3 +39,8 @@ function criaLista(){
         document.getElementById("tabela").innerHTML = tabela;
     }
 }
+
+// Função para excluir nome da lista
+function excluir(i){
+
+}
