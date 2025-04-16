@@ -44,5 +44,4 @@ function criaLista(){
 function excluir(i){
     dadosLista.splice ((i-1), 1);
     document.getElementById("tabela").deleteRow(i);
-    console.log("dadosLista");
 }
