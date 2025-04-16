@@ -21,6 +21,7 @@ function salvarUser(){
     if(nomeUser){
         dadosLista.push(nomeUser);
         console.log(dadosLista);
+        criaLista();
         document.getElementById('nomeUser').value = '';
         alert('Usuário cadastrado com sucesso!');
     }else {
@@ -30,3 +31,11 @@ function salvarUser(){
 }
 
 //Função para preencher a lista de cadastro
+
+function criaLista(){
+    let tabela = "<tr><th>Nome</th><th></th></tr>";
+    for(let i = 0; i<=(dadosLista.length-1); i++){
+        tabela += "<tr><td>" + dadosLista[i] + "</td><td><button class='btn btn-warning'>Editar</button><button class='btn btn-danger'>Excluir</button></td></tr>";
+        document.getElementById("tabela").innerHTML = tabela;
+    }
+}
