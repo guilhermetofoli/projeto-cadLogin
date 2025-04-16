@@ -42,5 +42,5 @@ function criaLista(){
 
 // Função para excluir nome da lista
 function excluir(i){
-
+    dadosLista.splice ((i-1), 1);
 }
