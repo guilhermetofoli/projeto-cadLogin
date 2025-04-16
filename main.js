@@ -23,6 +23,10 @@ function salvarUser(){
         console.log(dadosLista);
         document.getElementById('nomeUser').value = '';
         alert('Usuário cadastrado com sucesso!');
+    }else {
+        alert("Favor informar um nome para cadastro");
     }
 
 }
+
+//Função para preencher a lista de cadastro
